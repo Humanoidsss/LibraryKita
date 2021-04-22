@@ -13,5 +13,15 @@ namespace LibraryKita.MasterPages
         {
 
         }
+
+        protected void LoginBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginForm.aspx");
+        }
+
+        protected void RegisterBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegisterForm.aspx");
+        }
     }
 }
