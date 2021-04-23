@@ -28,7 +28,8 @@ namespace LibraryKita
                ("Data Source=HUMANOIDSS;Initial Catalog = LibraryKita;Trusted_Connection=true;");
                 con.Open();
 
-                SqlCommand cmd = new SqlCommand("insert into Orders values(@OrderID,@Username,@BukuNama ,@OrderDate, @ReturnDate, @Isreturn)", con);
+                SqlCommand cmd = new SqlCommand("Update into Orders set Isreturn='1' Where OrderID = @OrderID", con);
+                cmd.Parameters.AddWithValue("OrderID", CheckListOrder.SelectedValue);
                 cmd.ExecuteNonQuery();
 
             }
