@@ -24,9 +24,13 @@ namespace LibraryKita
             }
             else
             {
+                SqlConnection con = new SqlConnection
+               ("Data Source=HUMANOIDSS;Initial Catalog = LibraryKita;Trusted_Connection=true;");
+                con.Open();
 
+                SqlCommand cmd = new SqlCommand("insert into Orders values(@OrderID,@Username,@BukuNama ,@OrderDate, @ReturnDate, @Isreturn)", con);
+                cmd.ExecuteNonQuery();
 
-                
             }
         }
     }
