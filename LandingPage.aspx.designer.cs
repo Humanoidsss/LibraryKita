@@ -15,6 +15,15 @@ namespace LibraryKita.MasterPages
     {
 
         /// <summary>
+        /// LandingText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LandingText;
+
+        /// <summary>
         /// LoginButton control.
         /// </summary>
         /// <remarks>
@@ -31,5 +40,23 @@ namespace LibraryKita.MasterPages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button RegisterButton;
+
+        /// <summary>
+        /// BorrowButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BorrowButton;
+
+        /// <summary>
+        /// ReturnButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ReturnButton;
     }
 }

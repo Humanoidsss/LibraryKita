@@ -11,7 +11,15 @@ namespace LibraryKita.MasterPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if(Session["Login"]!= null)
+            {
+                LoginButton.Visible = false;
+                RegisterButton.Visible = false;
+                ReturnButton.Visible = true;
+                BorrowButton.Visible = true;
+
+                LandingText.Text = "Welcome to Library Kita!, " + Session["Login"].ToString();
+            }
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
@@ -22,6 +30,16 @@ namespace LibraryKita.MasterPages
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("RegisterForm.aspx");
+        }
+
+        protected void BorrowButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ReturnButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

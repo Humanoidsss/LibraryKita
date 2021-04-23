@@ -11,7 +11,12 @@ namespace LibraryKita.MasterPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Login"] != null)
+            {
+                LoginBtn.Visible = false;
+                RegisterBtn.Visible = false;
+                LogoutBtn.Visible = true;
+            }
         }
 
         protected void LoginBtn_Click(object sender, EventArgs e)

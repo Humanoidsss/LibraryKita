@@ -24,6 +24,15 @@ namespace LibraryKita
         protected global::System.Web.UI.WebControls.TextBox Username;
 
         /// <summary>
+        /// ValUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValUsername;
+
+        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace LibraryKita
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Email;
+
+        /// <summary>
+        /// ValEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValEmail;
 
         /// <summary>
         /// Password control.
@@ -42,6 +60,15 @@ namespace LibraryKita
         protected global::System.Web.UI.WebControls.TextBox Password;
 
         /// <summary>
+        /// ValPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValPassword;
+
+        /// <summary>
         /// SubmitReg control.
         /// </summary>
         /// <remarks>
@@ -49,5 +76,14 @@ namespace LibraryKita
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitReg;
+
+        /// <summary>
+        /// message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label message;
     }
 }
