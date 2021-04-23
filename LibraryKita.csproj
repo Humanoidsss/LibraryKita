@@ -107,6 +107,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BookForm.aspx" />
+    <Content Include="BorrowForm.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -122,6 +124,7 @@
     <Content Include="LandingPage.aspx" />
     <Content Include="LoginForm.aspx" />
     <Content Include="RegisterForm.aspx" />
+    <Content Include="ReturnForm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -252,6 +255,20 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BookForm.aspx.cs">
+      <DependentUpon>BookForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookForm.aspx.designer.cs">
+      <DependentUpon>BookForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowForm.aspx.cs">
+      <DependentUpon>BorrowForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrowForm.aspx.designer.cs">
+      <DependentUpon>BorrowForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -283,6 +300,13 @@
     </Compile>
     <Compile Include="RegisterForm.aspx.designer.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.aspx.cs">
+      <DependentUpon>ReturnForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnForm.aspx.designer.cs">
+      <DependentUpon>ReturnForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

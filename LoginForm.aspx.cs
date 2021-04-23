@@ -20,10 +20,12 @@ namespace LibraryKita.MasterPages
             if (Username.Text == null)
             {
                 message.Text = "Username must be filled!";
+                message.Visible = true;
             }
-            else if (Password.MaxLength < 4 || Password.Text == null)
+            else if (Password.Text == null)
             {
                 message.Text = "Password must be filled!";
+                message.Visible = true;
             }
             else
             {

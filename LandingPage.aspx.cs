@@ -34,12 +34,12 @@ namespace LibraryKita.MasterPages
 
         protected void BorrowButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("BorrowForm.aspx");
         }
 
         protected void ReturnButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("ReturnForm.aspx");
         }
     }
 }

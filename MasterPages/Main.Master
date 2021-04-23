@@ -8,9 +8,9 @@
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
 
     <link href="../Content/CenterSheet.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="../Scripts/popper.min.js"></script>
-    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -33,7 +33,7 @@
                             <a class="nav-link" href="../LandingPage.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">View Books</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" Visible="false" OnClick="BookBtn_Click" ID="BookBtn" runat="server">Add Books</asp:LinkButton>
                         </li>
 
                     </ul>
@@ -46,7 +46,7 @@
                             <asp:LinkButton class="nav-link" ID="RegisterBtn" OnClick="RegisterBtn_Click" runat="server">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton Visible="false" class="nav-link" ID="LogoutBtn" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton Visible="false" class="nav-link" OnClick="LogoutBtn_Click"  ID="LogoutBtn" runat="server">Logout</asp:LinkButton>
                         </li>
                     </ul>
                 </div>

@@ -16,6 +16,7 @@ namespace LibraryKita.MasterPages
                 LoginBtn.Visible = false;
                 RegisterBtn.Visible = false;
                 LogoutBtn.Visible = true;
+                BookBtn.Visible = true;
             }
         }
 
@@ -28,5 +29,17 @@ namespace LibraryKita.MasterPages
         {
             Response.Redirect("RegisterForm.aspx");
         }
+
+        protected void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            Session["Login"] = null;
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void BookBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BookForm.aspx");
+        }
+    
     }
 }
